@@ -6,7 +6,28 @@
 
   <groupId>org.example</groupId>
   <artifactId>interview-questions</artifactId>
+  <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
+  <modules>
+    <module>duplicated-code</module>
+    <module>data-grouping</module>
+  </modules>
 
+  <properties>
+    <java.version>1.8</java.version>
+  </properties>
 
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <source>${java.version}</source>
+          <target>${java.version}</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 </project>
