@@ -11,6 +11,7 @@
   <modules>
     <module>duplicated-code</module>
     <module>data-grouping</module>
+    <module>fix-code</module>
   </modules>
 
   <properties>
